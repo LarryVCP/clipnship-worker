@@ -22,7 +22,7 @@ async function processOneJob() {
         const markers = await loadJobMarkers(job.id);
         console.log(`Loaded ${markers.length} marker(s).`);
 
-        const vodPath = resolveVodSource(job.video_id);
+        const vodPath = await resolveVodSource(job.video_id);
 
         const result = await createClips({
             job,

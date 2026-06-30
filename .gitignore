@@ -1,7 +1,24 @@
+# Dependencies
 node_modules/
-.env
 
+# Secrets
+.env
+.env.*
+
+# Runtime data
 vods/
 output/
+temp/
 
+# Third-party binaries
+bin/*
+!bin/.gitkeep
+!bin/README.md
+
+# Logs
 *.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
